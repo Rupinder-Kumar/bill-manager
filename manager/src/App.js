@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import FeatureTabs from "./components/FeatureTabs/FeatureTabs";
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import Dashboard from "./containers/Dashboard/Dashboard";
 import './App.css';
 
 class App extends Component {
@@ -17,7 +17,7 @@ class App extends Component {
     return (
       <React.Fragment>
        <FeatureTabs activeFeature={activeFeature} handleTabChange={this.handleTabChange} />
-        {activeFeature === "Dashboard" ? : ""}
+        {activeFeature === "Dashboard" ?  <Dashboard /> : ""}
       </React.Fragment>
     );
   }

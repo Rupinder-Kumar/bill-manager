@@ -1,0 +1,6 @@
+.bill-table tbody tr td span{
+    padding:0 5px;
+}
+.bill-table tbody tr td span i.fa-trash {
+    color: red;
+}
