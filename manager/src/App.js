@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import FeatureTabs from "./components/FeatureTabs/FeatureTabs";
 import Dashboard from "./containers/Dashboard/Dashboard";
+import BudgetFilter from "./containers/BudgetFilter/BudgetFilter";
 import './App.css';
 
 class App extends Component {
@@ -18,6 +19,7 @@ class App extends Component {
       <React.Fragment>
        <FeatureTabs activeFeature={activeFeature} handleTabChange={this.handleTabChange} />
         {activeFeature === "Dashboard" ?  <Dashboard /> : ""}
+        {activeFeature === "Budget Filter" ?  <BudgetFilter /> : ""}
       </React.Fragment>
     );
   }

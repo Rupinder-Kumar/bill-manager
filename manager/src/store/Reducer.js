@@ -7,9 +7,7 @@ const initialState = {
 }
 
 const reducer = ( state = initialState, actionType ) => {
-    
-    console.log(actionType);
-    switch(actionType.type) {
+      switch(actionType.type) {
 
         case ActionTypes.LOAD_CATEGORIES:
                 return { ...state, categories: actionType.payload }
